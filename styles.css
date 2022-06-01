@@ -1,0 +1,121 @@
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1c1c1c;
+  font-family: "Open Sans", sans-serif;
+}
+
+.card {
+  width: 500px;
+  background-color: #1f2937;
+  padding: 2rem;
+  position: relative;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+span {
+  display: block;
+  color: #4adf86;
+}
+
+p {
+  color: #d5d4d8;
+  font-size: 20px;
+  margin-top: 0;
+}
+
+label {
+  color: #fff;
+}
+
+button {
+  background-color: #10b981;
+  color: white;
+  font-weight: 500;
+  line-height: 24px;
+  padding: 0.3rem 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+#create-password {
+  margin-top: 1rem;
+}
+
+hr {
+  margin: 1.5rem 0;
+  border: 1px solid #2f3e53;
+}
+
+#inputs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.password,
+#length {
+  width: 195px;
+  background: #273549;
+  border-radius: 6px;
+  line-height: 30px;
+  height: 30px;
+  color: #55f991;
+  text-align: center;
+  border: none;
+  outline: none;
+}
+
+#length {
+  width: 50px;
+}
+
+.copy-text {
+  padding: 5px;
+  background: #273549;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+}
+
+.copy-btn:active {
+  background-color: #21ce94;
+}
+
+.copy-btn::before {
+  content: "Copied!";
+  background-color: #10b981;
+  position: absolute;
+  top: 250px;
+  right: 50px;
+  padding: 8px 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  display: none;
+}
+
+.copy-text.clicked .copy-btn::before {
+  display: block;
+}
+
+input {
+  width: 211px;
+  height: 39px;
+  margin-left: 38px;
+  margin-top: 39px;
+  align-items: center;
+  text-align: center;
+  border-radius: 6px;
+  border: none;
+  background: #273549;
+  color: #6ef7b7;
+}
